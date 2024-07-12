@@ -686,3 +686,12 @@ button {
 .footer__copyright{
   border-top: 1px solid #406181;
 }
+
+
+/* aos */
+[data-aos] {
+  visibility: hidden;
+}
+[data-aos].animate__animated {
+  visibility: visible;
+}

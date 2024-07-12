@@ -1,0 +1,130 @@
+/* PC */
+@media(min-width: 992px){
+  .mobile__header{
+    display: none;
+  }
+}
+/* Tablet-mobile */
+@media(max-width: 	991.98px){
+    /* ẩn navbar */
+    .navbar{
+      display: none;
+    }
+    /* chuyển logo vào giữa */
+    .header-top{
+      position: relative;
+    }
+    .header__logo{
+      position: absolute;
+      left: 50%;
+      translate: -50% -50%;
+    }
+    /* căn vị trí của menu */
+    .menu-header__icon{
+      position: absolute;
+      top: 38px;
+      left: 26px;
+      color: #fff;
+      height: 20px;
+    }
+    .menu-overlay{
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1; /* lớp phủ lên đầu tiên */
+      inset: 0  ; /* dài rộng của lớp phủ */
+      /* bình thường ẩn overlay đi */
+      opacity: 0;
+      visibility:hidden;
+      transition: 0.5s;
+    }
+    /* kiểm tra nếu checkbox được check thì hiện overlay */
+    .menu-checkbox:checked ~ .menu-overlay{
+      opacity: 1;
+      visibility: visible;
+    }
+    /* code cho menu drawer */
+    .menu-drawer{
+      position: fixed;
+      background-color: #144674;
+      inset: 0 40% 0 0;
+      z-index: 2;
+      transform: translateX(-100%);
+      transition: 0.5s;
+      padding: 60px;
+    }
+    /* kiểm tra nếu checkbox được check hiện menu */
+    .menu-checkbox:checked ~.menu-drawer{
+      transform: translateX(0);
+    }
+    /* menu top */
+    .close__menu{
+      width: 24px;
+      color: #fff;
+    }
+    .menu-drawer__top{
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+    }
+    #navbar__list--mobile{
+      margin-top: 30px;
+    }
+    .navbar__item{
+      margin-top: 20px;
+    }
+    .navbar__link{
+      display: block;
+      font-size: 2rem;
+    }
+    .navbar__link:hover{
+     background-color: #265c8e; 
+    }
+
+
+    /*------ HERO -----*/
+    .hero{
+       flex-direction: column;
+       gap: 70px;
+    }
+    .hero__content{
+      order: 2; /* để cho nó nằm sau */
+      width: 80%;
+      margin: 30px auto;
+      text-align: center;
+    }
+    .hero__row{
+      justify-content: center;
+    }
+    .hero__media{
+      order: 1;
+      margin: 0 auto;
+    }
+
+    /* khối service */
+    .service__row{
+      flex-direction: column;
+      row-gap: 30px;
+    }
+    .service__img{
+      width: 100%;
+    }
+    .service-item{
+      width: 90%;
+      text-align: start;
+    }
+    .service__list{
+      text-align: center;
+    }
+}
+/* Tablet */
+@media(min-width: 	768px) and (max-width: 991.98px){
+}
+/* mobile */
+@media(max-width: 	767.89px){
+
+}
+
+/* phần không liên quan */
+.footer{
+  display: none;
+}
