@@ -432,7 +432,6 @@ button {
   align-items: center;
   justify-content: space-between;
   padding: 0 70px;
-  width: 1170px;
   height: 427px;
   border-radius: 4px;
   background: #2e80ce;
@@ -482,7 +481,7 @@ button {
 }
 /* left */
 .blogg__heading {
-  width: 470px;
+  /* width: 470px; */
 }
 .blog__more {
   margin-top: 28px;
